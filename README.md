@@ -5,3 +5,4 @@ Frontend Mentor is an online platform that offers free and challenging coding pr
 |  #  | Project                                                                                                      | Live Demo                                                                            | Difficulty |
 | :-: | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ---------- |
 | 01  | [Order Summary Component](https://github.com/douglasdhein/frontend-mentor/tree/main/order-summary-component) | [Live Demo](https://douglasdhein.github.io/frontend-mentor/order-summary-component/) | Newbie     |
+| 02  | [FAQ Accordion](https://github.com/douglasdhein/frontend-mentor/tree/main/faq-accordion)                     | [Live Demo](https://douglasdhein.github.io/frontend-mentor/faq-accordion/)           | Newbie     |

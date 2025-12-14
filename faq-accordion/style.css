@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--purple-100);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  background-color: var(--white);
+  max-width: 800px;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--purple-950);
+}
+
+.accordion-item:not(:last-child) {
+  border-bottom: 2px solid var(--purple-100);
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--purple-950);
+  text-align: left;
+}
+
+.accordion-button:hover span {
+  color: purple;
+}
+
+.accordion-button:focus-visible {
+  outline: 2px solid var(--purple-600);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.icons img {
+  width: 24px;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.accordion-item.open .plus-icon {
+  display: none;
+}
+
+.accordion-item.open .minus-icon {
+  display: block;
+}
+
+.accordion-response {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.open .accordion-response {
+  max-height: 500px;
+}
+
+.accordion-response p {
+  color: var(--purple-600);
+  padding: 1rem 0 1.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 540px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+  }
+
+  .faq-header h1 {
+    font-size: 2.2rem;
+  }
+}
